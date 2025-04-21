@@ -49,7 +49,7 @@ app.use((req: Request, res: Response) => {
   });
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = parseInt(process.env.PORT || "3001", 10);
 
 // Start server with error handling
 const server = app
