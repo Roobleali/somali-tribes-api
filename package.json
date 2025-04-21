@@ -6,8 +6,13 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "somali",
+    "tribes",
+    "abtirsi",
+    "api"
+  ],
+  "author": "Roobleali",
   "license": "ISC",
   "description": "API for Somali Abtirsi",
   "dependencies": {
