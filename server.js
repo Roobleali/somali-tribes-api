@@ -5,8 +5,14 @@ const abtirsiRoutes = require("./routes/tribes");
 
 const app = express();
 
-// Middleware
-app.use(cors());
+// Middleware with CORS configuration
+app.use(
+  cors({
+    origin: "*", // Allow all origins
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.use(express.json());
 
 // Error handling middleware
